@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		843B8BE41EF5665000C0F1AE /* HelperForLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8BE31EF5665000C0F1AE /* HelperForLocation.m */; };
+		843B8BE71EF5671000C0F1AE /* ForecastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8BE61EF5671000C0F1AE /* ForecastModel.m */; };
+		843B8BEA1EF567E500C0F1AE /* ForecastApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8BE91EF567E500C0F1AE /* ForecastApiClient.m */; };
+		843B8BED1EF568F400C0F1AE /* ForecastModel+CLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8BEC1EF568F400C0F1AE /* ForecastModel+CLLocation.m */; };
+		843B8BF01EF5950200C0F1AE /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8BEF1EF5950200C0F1AE /* Location.m */; };
+		843B8BF31EF595A300C0F1AE /* CurrentWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8BF21EF595A300C0F1AE /* CurrentWeather.m */; };
+		843B8BF61EF5966A00C0F1AE /* DayWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8BF51EF5966A00C0F1AE /* DayWeather.m */; };
+		843B8BF91EF5972700C0F1AE /* WeatherForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8BF81EF5972700C0F1AE /* WeatherForecast.m */; };
+		843B8BFC1EF597AB00C0F1AE /* HourWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8BFB1EF597AB00C0F1AE /* HourWeather.m */; };
+		843B8C021EF59CE600C0F1AE /* WeekViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8C011EF59CE600C0F1AE /* WeekViewCell.m */; };
+		843B8C051EF5B0A000C0F1AE /* MyLocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8C041EF5B0A000C0F1AE /* MyLocationsTableViewController.m */; };
+		843B8C081EF5B28300C0F1AE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8C071EF5B28300C0F1AE /* SearchViewController.m */; };
+		84AD34FB1EF96AF900FD6C60 /* WeekViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AD34F91EF96AF900FD6C60 /* WeekViewCell.xib */; };
+		84C833831EF2C1620010A28E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C833821EF2C1620010A28E /* main.m */; };
+		84C833861EF2C1620010A28E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C833851EF2C1620010A28E /* AppDelegate.m */; };
+		84C8338C1EF2C1620010A28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C8338A1EF2C1620010A28E /* Main.storyboard */; };
+		84C8338E1EF2C1620010A28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C8338D1EF2C1620010A28E /* Assets.xcassets */; };
+		84C833911EF2C1620010A28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C8338F1EF2C1620010A28E /* LaunchScreen.storyboard */; };
+		84C8339A1EF303F60010A28E /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C833991EF303F60010A28E /* PageViewController.m */; };
+		84C833A01EF304B80010A28E /*  background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C8339E1EF304B80010A28E /*  background1.jpg */; };
+		84C833A11EF304B80010A28E /* background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C8339F1EF304B80010A28E /* background2.jpg */; };
+		84C833A41EF310E90010A28E /* CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C833A31EF310E90010A28E /* CurrentViewController.m */; };
+		84C833A71EF310F80010A28E /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C833A61EF310F80010A28E /* DayViewController.m */; };
+		84C833AA1EF3110D0010A28E /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C833A91EF3110D0010A28E /* WeekViewController.m */; };
+		84E10A221EFACBBF0060DF5F /* HourlyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E10A201EFACBBF0060DF5F /* HourlyViewCell.m */; };
+		84E10A231EFACBBF0060DF5F /* HourlyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E10A211EFACBBF0060DF5F /* HourlyViewCell.xib */; };
+		D2F78F3A4C5211C271E97A1B /* libPods-TempLook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E05023CC272B0F7E1D0F46F /* libPods-TempLook.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E05023CC272B0F7E1D0F46F /* libPods-TempLook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TempLook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CEBA9188927FD67FBD59AA6 /* Pods-TempLook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempLook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TempLook/Pods-TempLook.debug.xcconfig"; sourceTree = "<group>"; };
+		843B8BE21EF5665000C0F1AE /* HelperForLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperForLocation.h; sourceTree = "<group>"; };
+		843B8BE31EF5665000C0F1AE /* HelperForLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperForLocation.m; sourceTree = "<group>"; };
+		843B8BE51EF5671000C0F1AE /* ForecastModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastModel.h; sourceTree = "<group>"; };
+		843B8BE61EF5671000C0F1AE /* ForecastModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastModel.m; sourceTree = "<group>"; };
+		843B8BE81EF567E500C0F1AE /* ForecastApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastApiClient.h; sourceTree = "<group>"; };
+		843B8BE91EF567E500C0F1AE /* ForecastApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastApiClient.m; sourceTree = "<group>"; };
+		843B8BEB1EF568F400C0F1AE /* ForecastModel+CLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ForecastModel+CLLocation.h"; sourceTree = "<group>"; };
+		843B8BEC1EF568F400C0F1AE /* ForecastModel+CLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ForecastModel+CLLocation.m"; sourceTree = "<group>"; };
+		843B8BEE1EF5950200C0F1AE /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		843B8BEF1EF5950200C0F1AE /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		843B8BF11EF595A300C0F1AE /* CurrentWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentWeather.h; sourceTree = "<group>"; };
+		843B8BF21EF595A300C0F1AE /* CurrentWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentWeather.m; sourceTree = "<group>"; };
+		843B8BF41EF5966A00C0F1AE /* DayWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayWeather.h; sourceTree = "<group>"; };
+		843B8BF51EF5966A00C0F1AE /* DayWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayWeather.m; sourceTree = "<group>"; };
+		843B8BF71EF5972700C0F1AE /* WeatherForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherForecast.h; sourceTree = "<group>"; };
+		843B8BF81EF5972700C0F1AE /* WeatherForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherForecast.m; sourceTree = "<group>"; };
+		843B8BFA1EF597AB00C0F1AE /* HourWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourWeather.h; sourceTree = "<group>"; };
+		843B8BFB1EF597AB00C0F1AE /* HourWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourWeather.m; sourceTree = "<group>"; };
+		843B8C001EF59CE600C0F1AE /* WeekViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewCell.h; sourceTree = "<group>"; };
+		843B8C011EF59CE600C0F1AE /* WeekViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewCell.m; sourceTree = "<group>"; };
+		843B8C031EF5B0A000C0F1AE /* MyLocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationsTableViewController.h; sourceTree = "<group>"; };
+		843B8C041EF5B0A000C0F1AE /* MyLocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationsTableViewController.m; sourceTree = "<group>"; };
+		843B8C061EF5B28300C0F1AE /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		843B8C071EF5B28300C0F1AE /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		84AD34F91EF96AF900FD6C60 /* WeekViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeekViewCell.xib; path = "../../../Downloads/nebulous-master 2/Nebulous/Nebulous/WeekViewCell.xib"; sourceTree = "<group>"; };
+		84C8337E1EF2C1620010A28E /* TempLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C833821EF2C1620010A28E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84C833841EF2C1620010A28E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84C833851EF2C1620010A28E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84C8338B1EF2C1620010A28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C8338D1EF2C1620010A28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C833901EF2C1620010A28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84C833921EF2C1620010A28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C833981EF303F60010A28E /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		84C833991EF303F60010A28E /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		84C8339E1EF304B80010A28E /*  background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = " background1.jpg"; sourceTree = "<group>"; };
+		84C8339F1EF304B80010A28E /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpg; sourceTree = "<group>"; };
+		84C833A21EF310E90010A28E /* CurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentViewController.h; sourceTree = "<group>"; };
+		84C833A31EF310E90010A28E /* CurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentViewController.m; sourceTree = "<group>"; };
+		84C833A51EF310F80010A28E /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
+		84C833A61EF310F80010A28E /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
+		84C833A81EF3110D0010A28E /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
+		84C833A91EF3110D0010A28E /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
+		84E10A1F1EFACBBF0060DF5F /* HourlyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HourlyViewCell.h; path = "../../../Downloads/nebulous-master 4/Nebulous/Nebulous/HourlyViewCell.h"; sourceTree = "<group>"; };
+		84E10A201EFACBBF0060DF5F /* HourlyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HourlyViewCell.m; path = "../../../Downloads/nebulous-master 4/Nebulous/Nebulous/HourlyViewCell.m"; sourceTree = "<group>"; };
+		84E10A211EFACBBF0060DF5F /* HourlyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HourlyViewCell.xib; path = "../../../Downloads/nebulous-master 4/Nebulous/Nebulous/HourlyViewCell.xib"; sourceTree = "<group>"; };
+		85EA3C883D0897B85CE0ED64 /* Pods-TempLook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempLook.release.xcconfig"; path = "Pods/Target Support Files/Pods-TempLook/Pods-TempLook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C8337B1EF2C1620010A28E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F78F3A4C5211C271E97A1B /* libPods-TempLook.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D5785156E38FCCFE902A2C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CEBA9188927FD67FBD59AA6 /* Pods-TempLook.debug.xcconfig */,
+				85EA3C883D0897B85CE0ED64 /* Pods-TempLook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BF5040E2EB82977B1E29470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E05023CC272B0F7E1D0F46F /* libPods-TempLook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84C833751EF2C1620010A28E = {
+			isa = PBXGroup;
+			children = (
+				84C833801EF2C1620010A28E /* TempLook */,
+				84C8337F1EF2C1620010A28E /* Products */,
+				5D5785156E38FCCFE902A2C8 /* Pods */,
+				6BF5040E2EB82977B1E29470 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84C8337F1EF2C1620010A28E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C8337E1EF2C1620010A28E /* TempLook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C833801EF2C1620010A28E /* TempLook */ = {
+			isa = PBXGroup;
+			children = (
+				84C8339C1EF3040F0010A28E /* Models */,
+				84C8339B1EF304040010A28E /* Controllers */,
+				84C8339D1EF304210010A28E /* Views */,
+				84C833841EF2C1620010A28E /* AppDelegate.h */,
+				84C833851EF2C1620010A28E /* AppDelegate.m */,
+				84C8338D1EF2C1620010A28E /* Assets.xcassets */,
+				84C8339E1EF304B80010A28E /*  background1.jpg */,
+				84C8339F1EF304B80010A28E /* background2.jpg */,
+				84C833921EF2C1620010A28E /* Info.plist */,
+				84C833811EF2C1620010A28E /* Supporting Files */,
+			);
+			path = TempLook;
+			sourceTree = "<group>";
+		};
+		84C833811EF2C1620010A28E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84C833821EF2C1620010A28E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84C8339B1EF304040010A28E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C833981EF303F60010A28E /* PageViewController.h */,
+				84C833991EF303F60010A28E /* PageViewController.m */,
+				84C833A21EF310E90010A28E /* CurrentViewController.h */,
+				84C833A31EF310E90010A28E /* CurrentViewController.m */,
+				84C833A51EF310F80010A28E /* DayViewController.h */,
+				84C833A61EF310F80010A28E /* DayViewController.m */,
+				84C833A81EF3110D0010A28E /* WeekViewController.h */,
+				84C833A91EF3110D0010A28E /* WeekViewController.m */,
+				843B8C031EF5B0A000C0F1AE /* MyLocationsTableViewController.h */,
+				843B8C041EF5B0A000C0F1AE /* MyLocationsTableViewController.m */,
+				843B8C061EF5B28300C0F1AE /* SearchViewController.h */,
+				843B8C071EF5B28300C0F1AE /* SearchViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		84C8339C1EF3040F0010A28E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				843B8BE21EF5665000C0F1AE /* HelperForLocation.h */,
+				843B8BE31EF5665000C0F1AE /* HelperForLocation.m */,
+				843B8BEE1EF5950200C0F1AE /* Location.h */,
+				843B8BEF1EF5950200C0F1AE /* Location.m */,
+				843B8BE51EF5671000C0F1AE /* ForecastModel.h */,
+				843B8BE61EF5671000C0F1AE /* ForecastModel.m */,
+				843B8BE81EF567E500C0F1AE /* ForecastApiClient.h */,
+				843B8BE91EF567E500C0F1AE /* ForecastApiClient.m */,
+				843B8BEB1EF568F400C0F1AE /* ForecastModel+CLLocation.h */,
+				843B8BEC1EF568F400C0F1AE /* ForecastModel+CLLocation.m */,
+				843B8BF11EF595A300C0F1AE /* CurrentWeather.h */,
+				843B8BF21EF595A300C0F1AE /* CurrentWeather.m */,
+				843B8BFA1EF597AB00C0F1AE /* HourWeather.h */,
+				843B8BFB1EF597AB00C0F1AE /* HourWeather.m */,
+				843B8BF41EF5966A00C0F1AE /* DayWeather.h */,
+				843B8BF51EF5966A00C0F1AE /* DayWeather.m */,
+				843B8BF71EF5972700C0F1AE /* WeatherForecast.h */,
+				843B8BF81EF5972700C0F1AE /* WeatherForecast.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		84C8339D1EF304210010A28E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84E10A1F1EFACBBF0060DF5F /* HourlyViewCell.h */,
+				84E10A201EFACBBF0060DF5F /* HourlyViewCell.m */,
+				84E10A211EFACBBF0060DF5F /* HourlyViewCell.xib */,
+				84AD34F91EF96AF900FD6C60 /* WeekViewCell.xib */,
+				843B8C001EF59CE600C0F1AE /* WeekViewCell.h */,
+				843B8C011EF59CE600C0F1AE /* WeekViewCell.m */,
+				84C8338A1EF2C1620010A28E /* Main.storyboard */,
+				84C8338F1EF2C1620010A28E /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C8337D1EF2C1620010A28E /* TempLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C833951EF2C1620010A28E /* Build configuration list for PBXNativeTarget "TempLook" */;
+			buildPhases = (
+				C7823E7D4ED2A0C2EA0324CF /* [CP] Check Pods Manifest.lock */,
+				84C8337A1EF2C1620010A28E /* Sources */,
+				84C8337B1EF2C1620010A28E /* Frameworks */,
+				84C8337C1EF2C1620010A28E /* Resources */,
+				A7C9F0AE847D3A6B4E864DA8 /* [CP] Embed Pods Frameworks */,
+				B62B9AE008FFFE7C1039B5F7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempLook;
+			productName = TempLook;
+			productReference = 84C8337E1EF2C1620010A28E /* TempLook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C833761EF2C1620010A28E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Vitalka;
+				TargetAttributes = {
+					84C8337D1EF2C1620010A28E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = YXPFVNX3GV;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 84C833791EF2C1620010A28E /* Build configuration list for PBXProject "TempLook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84C833751EF2C1620010A28E;
+			productRefGroup = 84C8337F1EF2C1620010A28E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C8337D1EF2C1620010A28E /* TempLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C8337C1EF2C1620010A28E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C833A01EF304B80010A28E /*  background1.jpg in Resources */,
+				84C833911EF2C1620010A28E /* LaunchScreen.storyboard in Resources */,
+				84E10A231EFACBBF0060DF5F /* HourlyViewCell.xib in Resources */,
+				84AD34FB1EF96AF900FD6C60 /* WeekViewCell.xib in Resources */,
+				84C833A11EF304B80010A28E /* background2.jpg in Resources */,
+				84C8338E1EF2C1620010A28E /* Assets.xcassets in Resources */,
+				84C8338C1EF2C1620010A28E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7C9F0AE847D3A6B4E864DA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempLook/Pods-TempLook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62B9AE008FFFE7C1039B5F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempLook/Pods-TempLook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7823E7D4ED2A0C2EA0324CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C8337A1EF2C1620010A28E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843B8BF61EF5966A00C0F1AE /* DayWeather.m in Sources */,
+				843B8BF91EF5972700C0F1AE /* WeatherForecast.m in Sources */,
+				843B8BED1EF568F400C0F1AE /* ForecastModel+CLLocation.m in Sources */,
+				843B8BEA1EF567E500C0F1AE /* ForecastApiClient.m in Sources */,
+				843B8BF31EF595A300C0F1AE /* CurrentWeather.m in Sources */,
+				84E10A221EFACBBF0060DF5F /* HourlyViewCell.m in Sources */,
+				843B8C081EF5B28300C0F1AE /* SearchViewController.m in Sources */,
+				84C833A41EF310E90010A28E /* CurrentViewController.m in Sources */,
+				843B8BFC1EF597AB00C0F1AE /* HourWeather.m in Sources */,
+				84C833861EF2C1620010A28E /* AppDelegate.m in Sources */,
+				843B8BF01EF5950200C0F1AE /* Location.m in Sources */,
+				843B8C051EF5B0A000C0F1AE /* MyLocationsTableViewController.m in Sources */,
+				843B8BE71EF5671000C0F1AE /* ForecastModel.m in Sources */,
+				84C833AA1EF3110D0010A28E /* WeekViewController.m in Sources */,
+				843B8C021EF59CE600C0F1AE /* WeekViewCell.m in Sources */,
+				84C833831EF2C1620010A28E /* main.m in Sources */,
+				843B8BE41EF5665000C0F1AE /* HelperForLocation.m in Sources */,
+				84C8339A1EF303F60010A28E /* PageViewController.m in Sources */,
+				84C833A71EF310F80010A28E /* DayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84C8338A1EF2C1620010A28E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C8338B1EF2C1620010A28E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84C8338F1EF2C1620010A28E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C833901EF2C1620010A28E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C833931EF2C1620010A28E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84C833941EF2C1620010A28E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C833961EF2C1620010A28E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CEBA9188927FD67FBD59AA6 /* Pods-TempLook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YXPFVNX3GV;
+				INFOPLIST_FILE = TempLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZV.TempLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84C833971EF2C1620010A28E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85EA3C883D0897B85CE0ED64 /* Pods-TempLook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YXPFVNX3GV;
+				INFOPLIST_FILE = TempLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZV.TempLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C833791EF2C1620010A28E /* Build configuration list for PBXProject "TempLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C833931EF2C1620010A28E /* Debug */,
+				84C833941EF2C1620010A28E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C833951EF2C1620010A28E /* Build configuration list for PBXNativeTarget "TempLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C833961EF2C1620010A28E /* Debug */,
+				84C833971EF2C1620010A28E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C833761EF2C1620010A28E /* Project object */;
+}
